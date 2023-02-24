@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:-webkit-linear-gradient(180deg, #f0f1ff 0%, #e1fcfe 80%);
+    background:-o-linear-gradient(180deg, #f0f1ff 0%, #e1fcfe 80%);
+    background:-moz-linear-gradient(180deg, #f0f1ff 0%, #e1fcfe 80%);
+    background:linear-gradient(180deg, #f0f1ff 0%, #e1fcfe 80%);
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+#main {
+    padding: 5px 30px;
+    margin: 50px auto;
+    width:60%;
+    background-color: rgba(198, 220, 234, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+#title {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+#title h1 {
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.intro {
+    width: 90%;
+    padding: 10px;
+    margin: 20px auto 0;
+    font-size: 18px;;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+#entries {
+    margin: 20px 0 0 0;
+}
+#entries p {
+    margin: 0 0 20px; 0;
+    padding: 20px 30px;
+}
+#entries h2 {
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+#entries img {
+    width: 90%;
+    margin: 0 auto 10px;
+    display: block;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.entry {
+    width: 90%;
+    margin: 0 auto 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    display: block;
+}
