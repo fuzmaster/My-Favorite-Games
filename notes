@@ -5,23 +5,18 @@
 	<meta charset="utf-8">
 	<title>My Favorite Games Of All Time</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Signika+Negative&display=swap"
-		rel="stylesheet">
 </head>
 
 <body>
-	<div id="background"></div>
 	<div id="main">
 		<div id="title">
 			<h1>My Favorite Games Of All Time</h1>
-			<p class="intro">These are my all-time favorite video games. This list can be described as games that I could
+		</div>
+		<p class="intro">These are my all-time favorite video games. This list can be described as games that I could
 			play multiple times throughout the day and that I would always have time to play. Sure, there are some games
 			that I have only played once and consider masterpieces, but this list consists of four games that I could
 			play over and over again. That is why I believe these are my favorite games, something to which I could
 			return and never look back.</p>
-		</div>
 		<div id="entries">
 			<div class="entry">
 				<h2>Super Mario World</h2>
@@ -74,7 +69,27 @@
 			</div>
 		</div>
 	</div>
-	</div>
-</body>
+	<script>
+		// Fade in effect for entries on scroll
+		let entries = document.querySelectorAll(".entry");
+		entries.forEach((entry) => {
+			if (entry.getBoundingClientRect().top < window.innerHeight - 50) {
+				entry.style.opacity = 1;
+				entry.style.transform = "translateY(0)";
+			} else {
+				entry.style.opacity = 0;
+				entry.style.transform = "translateY(50px)";
+			}
+		});
 
+		window.addEventListener("scroll", () => {
+			entries.forEach((entry) => {
+				if (entry.getBoundingClientRect().top < window.innerHeight - 50) {
+					entry.style.opacity = 1;
+					entry.style.transform = "translateY(0)";
+				}
+			});
+		});
+	</script>
+</body>
 </html>
